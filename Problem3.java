@@ -7,19 +7,8 @@ public class Problem3
         int intNum = (int) decimalNum;
         double simplifiedNum = decimalNum - intNum;
         //.3424 is left
-        while (semiFinalNum == null)
-        {
-            simplifiedNum *=10;
-            try
-            {
-                semiFinalNum = simplifiedNum;
-            }
-            catch (ArithmeticException e);
-        }
-
-        System.out.println(semiFinalNum);;
-        
-        
+        int semiFinalNum = (int) simplifiedNum * 1000;
+        System.out.println(semiFinalNum);
         int finalNum = semiFinalNum/10;
         System.out.println(finalNum/100);
         System.out.println(finalNum/10%10);
